@@ -14,7 +14,7 @@ will assume you are using it to control a panic switch.
 # Serial Cable #
 
 The schematic for the serial cable can be found in
-(schematic.png)[./schematic.png].  It's basically a serial cable with one end
+[schematic.png](schematic.png).  It's basically a serial cable with one end
 cut off, and has a switch connected to the DCD line, and LEDs connected to the
 DTR and RTS lines.  This allows the system to detect button pushes and control
 the two LEDs.
@@ -22,7 +22,9 @@ the two LEDs.
 # Application #
 
 In addition to the serial cable, you also need the 'buttonizer' command found
-in this directory.  Run 'make' to compile it if you don't have it.
+in this directory.  Run 'make' to compile it if you don't have it.  The source
+code for the application is found in [buttonizer.c](buttonizer.c) and is very
+minimal and has no dependencies other than a working compiler.
 
 You run the executable with two arguments: the serial port that the cable is
 connected to, and the command you want run when someone presses the button.
